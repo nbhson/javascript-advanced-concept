@@ -1,0 +1,1 @@
+(()=>{let e=null;document.querySelector(".title").onmouseover=t=>{let a=0;clearInterval(e),e=setInterval((()=>{t.target.innerText=t.target.innerText.split("").map(((e,l)=>l<a?t.target.dataset.value[l]:"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(26*Math.random())])).join(""),a>=t.target.dataset.value.length&&clearInterval(e),a+=1/3}),50)}})();
